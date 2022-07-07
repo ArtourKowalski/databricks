@@ -5,6 +5,20 @@
 -- COMMAND ----------
 
 -- MAGIC %md
+-- MAGIC ### Ingest Data to the Notebook
+-- MAGIC 
+-- MAGIC ##### • Ingest data from dbfs sources
+-- MAGIC ##### • Create Sources as tables
+
+-- COMMAND ----------
+
+-- MAGIC %sql
+-- MAGIC SELECT * FROM employees_csv
+-- MAGIC LIMIT 5;
+
+-- COMMAND ----------
+
+-- MAGIC %md
 -- MAGIC ##### Let us change name of the table first (if by some reason we chose to leave _csv at the end of table name, we can simply rename it with following command):
 
 -- COMMAND ----------
@@ -21,7 +35,7 @@ LIMIT 5;
 -- COMMAND ----------
 
 -- MAGIC %md
--- MAGIC ##### Let's check the schema of the table
+-- MAGIC ##### We can easily check the schema of created table with following command:
 
 -- COMMAND ----------
 
@@ -30,7 +44,7 @@ DESCRIBE TABLE EMPLOYEES;
 -- COMMAND ----------
 
 -- MAGIC %md
--- MAGIC ##### If we take a closer look, we can notice that HIRE_DATE column is of "string" format. Let's assume we want to have it stored as "date" format:
+-- MAGIC ##### We can notice that HIRE_DATE column is of "string" format. Let's assume that we need to have it stored as "date" format for future reference:
 
 -- COMMAND ----------
 
