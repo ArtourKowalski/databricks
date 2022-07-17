@@ -9,8 +9,8 @@
 
 # COMMAND ----------
 
-user = "ArturK"
-password = "DemoPassword1!"
+user = "xxxxxxxxxxxxxxxxxxxxxx"
+password = "xxxxxxxxxxxxxxxxxxxxxx!"
 
 options = { 
 "sfUrl": "ey57100.west-europe.azure.snowflakecomputing.com/",
